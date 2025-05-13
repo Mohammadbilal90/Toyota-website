@@ -5,6 +5,10 @@
     list-style: none;
     text-decoration: none;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 body{
     min-height: 100vh;
     background-color: rgb(0, 0, 0);
@@ -17,11 +21,13 @@ header{
     right: 0;
     z-index: 1000;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-between;
     background: transparent;
     padding: 28px 12%;
     transition: all .50s ease;
+    flex-wrap: wrap;
 }
 .logo{
     display: flex;
@@ -130,16 +136,12 @@ header{
         flex-direction: column;
         justify-content: flex-start;
         text-align: center;
+        align-items: center;
         border-radius: 10px;
         padding: 15px 10px;
         z-index: 999;
         transition: all 0.5s ease;
     }
-
-    .links.show {
-        display: flex; 
-    }
-
     .links a {
         display: block;
         margin: 10px 0;
@@ -186,86 +188,10 @@ main{
     justify-content: center;
     margin-top: 10px;
 }
-
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 /* footer */
 
-    footer {
-      display: flex;
-      margin-top: 1100px;
-      background-color: #ffffff;
-      color: #000000;
-      padding: 40px 20px;
-    }
-
-    .footer-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    .footer-title {
-      flex: 1 1 250px;
-      margin-bottom: 20px;
-    }
-
-    .footer-title h2 {
-      font-size: 28px;
-      color: #000000;
-      margin-bottom: 10px;
-    }
-
-    .footer-title p {
-      font-size: 14px;
-      line-height: 1.6;
-      color: #000000;
-    }
-
-    .footer-links {
-      flex: 1 1 200px;
-      margin-bottom: 20px;
-    }
-
-    .footer-links h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #000000;
-    }
-
-    .footer-links ul {
-      list-style: none;
-    }
-
-    .footer-links ul li {
-      margin-bottom: 8px;
-    }
-
-    .footer-links ul li a {
-      color: #000000;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .footer-links ul li a:hover {
-      color: #7c6868;
-    }
-
-    .footer-bottom {
-      text-align: center;
-      padding-top: 20px;
-      border-top: 1px solid #333;
-      font-size: 14px;
-      color: #000000;
-    }
-
-    @media (max-width: 768px) {
-      .footer-container {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .footer-links {
-        margin-top: 20px;
-      }
-    }
