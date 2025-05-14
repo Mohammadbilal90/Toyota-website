@@ -7,7 +7,7 @@
 }
 
 html, body {
-    /* position: relative; */
+  /* position: relative; */
   height: 100%;
   margin: 0;
 }
@@ -15,16 +15,18 @@ body{
     min-height: 100vh;
     background-color: rgb(0, 0, 0);
     color: white;
+    margin: 0;
+    padding: 0;
 }
 header{
-    background-color: rgb(89, 89, 175);
-    position:absolute;
+    position: fixed;
+    background-color: #000000;    
     width: 100%;
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    /* background: transparent; */
     padding: 28px 12%;
     transition: all .50s ease;
 }
@@ -80,7 +82,7 @@ header{
     transition: all .50s ease;
 }
 .hamburger{
-    color: rgb(1, 184, 1);
+    color: rgb(1, 184, 1);  
 }
 .hamburger:hover{
     color: white;
@@ -163,62 +165,8 @@ header{
     width: 100%;
     height: 38px;
     background-color: #000000;
-    margin-top: 80px;
+    margin-top: 100px;
 }
-/* main section started */
-/* main{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    margin-top: 30px;
-    display: grid;     
-    flex-direction: column; 
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-.card{
-    flex-direction: column;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    transition: 0.2s ease-in-out;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    display: grid ;
-    grid-template-columns: repeat(auto-fir , minmax(320px , 1fr));
-}
-.card img{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
- .card:hover{
-    transform: scale(1.02);
-    transition: 1s ease-in-out;
-} 
-.card:hover img{
-    transform: scale(1.05);
-    transition: 0.1s ease-in-out;
-    opacity: 0.6 ;
-}
-.text{
-    display: flex;
-    justify-content: flex-start;
-    font-size: 19px;
-}
-.price{
-     display: flex;
-     justify-content: flex-end;
-     margin-top: -2px;
-}
-.content{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10px;
-} */
-
 .main-section {
     display: flex;
     flex-wrap: wrap;
@@ -227,7 +175,6 @@ header{
     padding: 40px;
     margin-top: 1px;
 }
-
 .card {
     background-color: #1e1e1e;
     border-radius: 12px;
@@ -237,39 +184,33 @@ header{
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
 }
-
 .card:hover {
     transform: scale(1.05);
 }
-
 .card img {
     width: 100%;
     height: 160px;
     object-fit: cover;
     border-bottom: 1px solid #444;
 }
-
 .text, .price, .content {
     padding: 10px;
     font-size: 16px;
 }
-
 .price {
     color: #accfa1;
     font-weight: bold;
 }
-
 .content {
 
     color: #ccc;
 }
-
 .wrapper {
   min-height: 80%;
   display: flex;
-  flex-direction: column;
-   
-}
+  flex-direction: column;  
+}  
+
 /* footer */
 
 .footer-content {
@@ -285,15 +226,14 @@ header{
 }
 /* carousel */
 .swiper {
-      width: 100%;
-      height: 100%;
+      width: 86%;
+      height: 86%;
     }
 
     .swiper-slide {
       background-position: center;
       background-size: cover;
     }
-
     .swiper-slide img {
       display: block;
       width: 100%;
@@ -301,3 +241,166 @@ header{
     .swiper {
         border-bottom: 1px solid #fff;
     }
+
+/* other pages main */
+
+.main-section{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
+form h2{
+    margin-bottom: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    gap: 7px ;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 450px;
+    height: 350px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+form:hover {
+    transform: scale(1.05);
+}
+form input {
+    border-radius: 6px;
+}
+form label {
+     font-size: 14px;
+}
+.btn1 {
+    text-size-adjust: 2px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 40px;
+    border-radius: 5px;
+    color: black;
+    background-color: #fff;
+    border: none;
+}
+.btn1:hover{
+    
+    border-radius: 20px;
+    background-color: rgb(72, 255, 0);
+    transition: all 0.3s ease;
+}
+.footer-sign {
+    margin-top: 150px;
+    border-top: 1px solid #fff;
+}
+.abouth2{
+    display: flex;
+    text-align: center;
+    margin-top: 140px;
+}
+.main-para{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    background: #1e1e1e;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+.main-para2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    background: #1e1e1e;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+.abouth3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.main-para-img img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 55px;
+}
+/* new-launch */
+
+.new-launch-h3{
+    margin-top: 120px;
+    font-size: 60px;
+}
+/* services */
+.service-h3 {
+    margin-top: 100px;
+    text-align: center;
+}
+.para-service{
+    padding: 90px;
+}
+.service-p{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    background: #1e1e1e;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+.mechanic img{
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    margin: 50px;
+    border-radius: 100px;
+    margin-bottom: -150px;
+}
+
+/* contact  */
+.content-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    gap: 20px;
+    align-items: center;
+    font-size: 30px;
+}
+ i {
+    margin-bottom: 30px;
+}
+.map-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.map-img img{
+    width: 90%;
+    height: 90%;
+    border-radius: 100px;
+}
